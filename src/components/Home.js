@@ -4,7 +4,11 @@ const Home = (props) => {
   console.log(props);
   return (
     <>
-      <h3>{props.tituloPagina}</h3>
+      <h3 className="titPagina">{props.tituloPagina}</h3>
+      <button type="button" className="btn"
+        onClick={props.onAlterarTitulo}>
+        Alterar título página
+      </button>
       {/* Para acessar as constantes diretas de dentro de props */}
       {/* 
       <p>
@@ -13,14 +17,23 @@ const Home = (props) => {
         Autor: {props.autor} 
       </p> 
       */}
+
+      <p>
+        ISBN: {props.dados.isbn}<br/>
+        Título: {props.dados.titulo}<br/>
+        Autor: {props.dados.autor} 
+      </p> 
+
       {/* Para acessar um array de objetos de dentro de props(usando o método map para percorrer o array em cada um dos seus indices(i) e em seguida usar o ponto(.) para acessar a propriedade em questão) */}
+      {/* 
       {props.dados.map((item, i) => (
         <p key={i}>
           ISBN: {props.dados[i].isbn}<br/>
           Título: {props.dados[i].titulo}<br/>
           Autor: {props.dados[i].autor}
         </p>
-      ))}
+      ))} 
+      */}
       {props.children}
 
       {/* Antes de usar o recebimento de dados via props */}
