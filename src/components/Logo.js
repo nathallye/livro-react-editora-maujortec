@@ -6,8 +6,10 @@ const Logo = (props) => {
   return (
     <Link to="/">
       <h1 className="logo">
-        <span>Editora MaujorTec</span>
+        <img src="img/logo.png"/>
       </h1>
+      <br />
+      <br />
     </Link>
   );
 };
