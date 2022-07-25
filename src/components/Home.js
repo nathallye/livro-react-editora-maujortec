@@ -7,7 +7,7 @@ const Home = (props) => {
       <h2>Últimos lançamentos</h2>
       {/* <p>Conteúdos da Home Page</p> */}
       {props.livros
-        .filter((n, index) => index < 10)
+        .filter((n, index) => index < 8)
         .map(livro => (
           <div className="card" key={livro.id}>
             <div className="thumb">
