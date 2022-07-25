@@ -7,7 +7,7 @@ React é um framework single page application(aplicação de única página).
 - Dentro da pasta do projeto, vamos rodar o comando:
 
 ```
-npx create-react-app tabela-livros
+npx create-react-app editora-maujortec
                      [nome-aplicação]
 ```
 
@@ -24,7 +24,7 @@ sudo npm install -g create-react-app
 - E em seguida podemos usá-lo:
 
 ```
-create-react-app tabela-livros
+create-react-app editora-maujortec
                  [nome-aplicação]
 ```
 
@@ -34,7 +34,7 @@ create-react-app tabela-livros
 Primeiro, entrar na pasta da aplicação:
 
 ```
-cd tabela-livros
+cd editora-maujortec
    [nome-pasta-aplicação]
 ```
 
